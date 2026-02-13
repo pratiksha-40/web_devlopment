@@ -15,16 +15,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Pages
+      - name: Setup GitHub Pages
         uses: actions/configure-pages@v4
 
-      - name: Upload artifact
+      - name: Upload website files
         uses: actions/upload-pages-artifact@v3
         with:
-          path: web_development
+          path: .
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
