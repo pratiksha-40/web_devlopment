@@ -1,0 +1,116 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
+
+body{background:#0a0f1f;color:#e5e7eb;}
+
+.hero{
+  min-height:100vh;
+  background:radial-gradient(circle at top,#1e1b4b,#020617);
+  padding:40px 8%;
+}
+
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{font-size:22px;}
+.logo span{color:#6366f1;}
+
+nav a{
+  margin-left:25px;
+  text-decoration:none;
+  color:#c7d2fe;
+}
+
+.hero-main{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:80px;
+}
+
+.hero-text h1{font-size:46px;margin-bottom:20px;}
+.hero-text p{color:#cbd5f5;max-width:500px;}
+
+.hero-buttons a{
+  display:inline-block;
+  margin-right:15px;
+  margin-top:25px;
+  padding:12px 26px;
+  border-radius:30px;
+  background:#6366f1;
+  color:white;
+  text-decoration:none;
+}
+
+.hero-photo{
+  width:300px;height:300px;
+  border-radius:50%;
+  overflow:hidden;
+  box-shadow:0 0 60px rgba(99,102,241,0.7);
+}
+
+.hero-photo img{width:100%;height:100%;object-fit:cover;}
+
+.section{padding:90px 8%;}
+.dark{background:#020617;}
+
+.title{text-align:center;font-size:32px;margin-bottom:20px;}
+.subtitle{text-align:center;color:#cbd5f5;max-width:700px;margin:auto;}
+
+.skills-grid, .project-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:30px;
+  margin-top:50px;
+}
+
+.skill-box, .project-card{
+  background:rgba(255,255,255,0.05);
+  padding:30px;
+  border-radius:18px;
+  transition:.4s;
+}
+
+.skill-box:hover, .project-card:hover{
+  transform:translateY(-12px);
+  box-shadow:0 20px 50px rgba(0,0,0,.5);
+}
+
+.skill-box i{font-size:30px;color:#6366f1;margin-bottom:15px;}
+
+.timeline{
+  max-width:700px;
+  margin:50px auto 0;
+}
+
+.timeline-item{
+  border-left:3px solid #6366f1;
+  padding-left:25px;
+  margin-bottom:40px;
+}
+
+.timeline-item span{color:#6366f1;font-weight:600;}
+
+.badge-grid{
+  display:flex;
+  flex-wrap:wrap;
+  gap:15px;
+  justify-content:center;
+  margin-top:40px;
+}
+
+.badge-grid span{
+  background:#111827;
+  padding:10px 20px;
+  border-radius:20px;
+}
+
+.contact-text{text-align:center;color:#cbd5f5;}
+
+footer{
+  text-align:center;
+  padding:25px;
+  color:#94a3b8;
+}

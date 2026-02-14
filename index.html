@@ -2,91 +2,157 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Pratiksha | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Pratiksha Ingale | Software Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- HERO SECTION -->
-<header class="hero">
-  <!-- ONLINE PROFILE IMAGE (SAFE) -->
-  <img 
-    src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" 
-    alt="Profile" 
-    class="profile-img"
-  >
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <header>
+    <h2 class="logo">Pratiksha<span>.</span></h2>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <h1>Hi, I'm Pratiksha 👋</h1>
-  <p>Frontend Developer | HTML • CSS • JavaScript</p>
+  <div class="hero-main">
+    <div class="hero-text">
+      <h1>Java / Full Stack Developer</h1>
+      <p>
+        Backend-focused engineer building scalable, clean and production-ready
+        applications with Java & Spring Boot.
+      </p>
 
-  <div class="social-links">
-    <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-    <a href="https://github.com/pratiksha-40" target="_blank">GitHub</a>
+      <div class="hero-buttons">
+        <a href="https://github.com/pratiksha-40" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <a href="www.linkedin.com/in/pratiksha-ingale-b90930287" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="hero-photo">
+      <img src="images/p_image.jpeg">
+    </div>
   </div>
-</header>
+</section>
 
-<!-- ABOUT -->
-<section>
-  <h2>About Me</h2>
-  <p>
-    I am a beginner web developer passionate about creating clean and
-    user-friendly websites using HTML, CSS, and JavaScript.
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section">
+  <h2 class="title">About Me</h2>
+  <p class="subtitle">
+    Software Engineer with strong backend skills, real industry experience,
+    and a passion for writing maintainable, scalable code.
   </p>
 </section>
 
-<!-- SKILLS -->
-<section>
-  <h2>Skills</h2>
-  <div class="skills">
-    <div class="skill">
-      <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML">
-      <p>HTML</p>
+<!-- ===== SKILLS ===== -->
+<section id="skills" class="section dark">
+  <h2 class="title">Technical Skills</h2>
+
+  <div class="skills-grid">
+    <div class="skill-box">
+      <i class="fa-solid fa-code"></i>
+      <h3>Frontend</h3>
+      <p>HTML, CSS, JavaScript, Angular</p>
     </div>
-    <div class="skill">
-      <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS">
-      <p>CSS</p>
+
+    <div class="skill-box">
+      <i class="fa-solid fa-server"></i>
+      <h3>Backend</h3>
+      <p>Java, Spring Boot, Hibernate, REST APIs</p>
     </div>
-    <div class="skill">
-      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript">
-      <p>JavaScript</p>
+
+    <div class="skill-box">
+      <i class="fa-solid fa-database"></i>
+      <h3>Database</h3>
+      <p>MySQL, MongoDB, PostgreSQL</p>
+    </div>
+
+    <div class="skill-box">
+      <i class="fa-solid fa-cloud"></i>
+      <h3>DevOps</h3>
+      <p>Docker, Kubernetes, Git, CI/CD, AWS</p>
     </div>
   </div>
 </section>
 
-<!-- PROJECTS -->
-<section>
-  <h2>Projects</h2>
+<!-- ===== EXPERIENCE ===== -->
+<section id="experience" class="section">
+  <h2 class="title">Experience</h2>
 
-  <div class="project">
-    <h3>Web Development Project</h3>
-    <p>Static website built using HTML, CSS and JavaScript.</p>
-    <a href="https://pratiksha-40.github.io/web_devlopment/" target="_blank">
-      Live Demo
-    </a>
-  </div>
+  <div class="timeline">
+    <div class="timeline-item">
+      <span>2025</span>
+      <h3>Software Developer – Softwaregen Technology</h3>
+      <p>Built backend APIs, optimized performance, worked in Agile teams.</p>
+    </div>
 
-  <div class="project">
-    <h3>Portfolio Website</h3>
-    <p>Personal portfolio to showcase my skills and projects.</p>
+    <div class="timeline-item">
+      <span>2024</span>
+      <h3>PHP Full Stack Developer – Sanity Technology</h3>
+      <p>Developed REST APIs, handled frontend & backend integration.</p>
+    </div>
   </div>
 </section>
 
-<!-- EDUCATION -->
-<section>
-  <h2>Education</h2>
-  <p><strong>Bachelor’s Degree</strong></p>
-  <p>Computer / Engineering Student</p>
+<!-- ===== PROJECTS ===== -->
+<section id="projects" class="section dark">
+  <h2 class="title">Projects</h2>
+
+  <div class="project-grid">
+    <div class="project-card">
+      <h3>Online Voting System</h3>
+      <ul>
+        <li>Secure authentication</li>
+        <li>Role-based access</li>
+        <li>Java, Spring Boot, Angular</li>
+      </ul>
+    </div>
+
+    <div class="project-card">
+      <h3>Salon Web Application</h3>
+      <ul>
+        <li>Appointment management</li>
+        <li>Dynamic UI with AJAX</li>
+        <li>HTML, JS, MySQL</li>
+      </ul>
+    </div>
+  </div>
 </section>
 
-<!-- CONTACT -->
-<section>
-  <h2>Contact</h2>
-  <p>Email: pratiksha@email.com</p>
+<!-- ===== CERTIFICATIONS ===== -->
+<section class="section">
+  <h2 class="title">Certifications</h2>
+
+  <div class="badge-grid">
+    <span>NCVET – Junior Software Developer</span>
+    <span>Java & Spring Boot – Codecademy</span>
+    <span>Linux Fundamentals</span>
+    <span>AWS Cloud Basics</span>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section dark">
+  <h2 class="title">Contact</h2>
+  <p class="contact-text">
+    📍 Pune, India <br>
+    📧 ingale.pratiksha1@gmail.com
+  </p>
 </section>
 
 <footer>
-  <p>© 2026 Pratiksha | All Rights Reserved</p>
+  © 2026 Pratiksha Ingale • Premium Portfolio
 </footer>
 
+<script src="js/script.js"></script>
 </body>
 </html>
